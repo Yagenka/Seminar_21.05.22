@@ -5,7 +5,7 @@ Console.Write("Введите слово: ");
 string text = Console.ReadLine();
 int length = text.Length;
 
-string Method (string text)
+string FindDouble (string text)
 {
 string result = string.Empty;
 int count = 0;
@@ -19,5 +19,5 @@ else result = "false";
 return result;
 }
 
-string res = Method (text);
+string res = FindDouble (text);
 Console.WriteLine(res);
