@@ -5,19 +5,19 @@ Console.Write("Введите слово: ");
 string text = Console.ReadLine();
 int length = text.Length;
 
-string FindDouble (string text)
+string FindDouble(string text)
 {
-string result = string.Empty;
-int count = 0;
-for (int i = 0; i < length - 1; i++)
-{
-    if (text[i] == text[i + 1]) count = count + 1;
-    else count = count;
-}
-if (count >= 1) result = "true";
-else result = "false";
-return result;
+    string result = string.Empty;
+    int count = 0;
+    for (int i = 0; i < length - 1; i++)
+    {
+        if (text[i] == text[i + 1]) count = count + 1;
+        else count = count;
+    }
+    if (count >= 1) result = "true";               
+    else result = "false";
+    return result;
 }
 
-string res = FindDouble (text);
+string res = FindDouble(text);
 Console.WriteLine(res);
