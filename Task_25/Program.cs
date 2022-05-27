@@ -9,7 +9,7 @@ int numberA = int.Parse(Console.ReadLine());
 Console.Write("Введите число B - ");
 int numberB = int.Parse(Console.ReadLine());
 
-int GetExponent (int numA, int numB)
+int GetExponent(int numA, int numB)
 {
     int result = 1;
     for (int i = 0; i < numB; i++)
@@ -18,5 +18,5 @@ int GetExponent (int numA, int numB)
     return result;
 }
 
-int numExponent = GetExponent (numberA, numberB);
+int numExponent = GetExponent(numberA, numberB);
 Console.WriteLine($"Число {numberA} в степени {numberB} равно {numExponent}");
