@@ -10,16 +10,14 @@ int number = int.Parse(Console.ReadLine());
 
 int GetSum(int num)
 {
-    int resultMod = 0;
     int result = 0;
-    for (int i = 0; num > 10; i++)
+    for (int i = 0; num > 1; i++)
     {
 
         int numMod = num % 10;
         num = num / 10;
-        resultMod = resultMod + numMod;
+        result = result + numMod;
     }
-    result = resultMod + num;
     return result;
 }
 
