@@ -10,15 +10,16 @@ int length = text.Length;
 
 bool FindDouble(string text)
 {
-    bool result = true;
-    int count = 0;
+    bool result = false;
+
     for (int i = 0; i < length - 1; i++)
     {
-        if (text[i] == text[i + 1]) count = count + 1;   
-        else count = count;
+        if (text[i] == text[i + 1])
+        {
+            result = true;
+            break;
+        }
     }
-    if (count >= 1) result = true;                         
-    else result = false;
     return result;
 }
 
